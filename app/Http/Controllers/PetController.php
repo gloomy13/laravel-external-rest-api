@@ -217,7 +217,7 @@ class PetController extends Controller
                 $error_message = 'Undocumented error';
             }
 
-            return redirect()->back()->with('error', $e->getMessage());
+            return redirect()->back()->with('error', $error_message);
         }
     }
 
